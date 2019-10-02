@@ -9,6 +9,7 @@ int main(int argc, char *argv[])
     DApplication::loadDXcbPlugin();
     DApplication a(argc, argv);
     a.setAttribute(Qt::AA_UseHighDpiPixmaps);
+//    a.setTheme("light");
     a.setTheme("dark");
     a.setOrganizationName("deepin");
     a.setApplicationName("DTK-Sensor");
