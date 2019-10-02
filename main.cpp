@@ -40,10 +40,14 @@ int main(int argc, char *argv[])
     a.setProductName("DTK-Sensor");
 //Agrega la pagina a el "Acknowledgement"
     a.setApplicationAcknowledgementPage("https://deepinenespañol.org");
-    QString about="<span style=' font-size:8pt; font-weight:600;'>Deepin en Español </span>"
-                  "<a href='https://deepinenespañol.org'>https://deepinenespañol.org</a><br/>"
-                  "<span style=' font-size:8pt; font-weight:600;'>Deepin Latin Code - developers</span>";
-    a.setApplicationDescription(about);
+//De este modo se podra traducir a otros idiomas
+    a.loadTranslator();
+    a.setApplicationDisplayName(QObject::tr("DTK Sensor"));
+    a.setApplicationDescription(QObject::tr(
+                                    "<span style=' font-size:8pt; font-weight:600;'>Deepin en Español </span>"
+                                    "<a href='https://deepinenespañol.org'>https://deepinenespañol.org</a><br/>"
+                                    "<span style=' font-size:8pt; font-weight:600;'>Deepin Latin Code - developers</span>"));
+
 
     DMainWindow w;
     w.setMinimumSize(600, 500);
