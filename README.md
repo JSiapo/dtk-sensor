@@ -1,3 +1,7 @@
+<p align="center"> 
+<img src="https://raw.githubusercontent.com/JSiapo/dtk-sensor/feature/structure/doc/images/sensorAbout.png">
+</p>
+
 # DTK SENSOR
 
 ## DEV
@@ -8,7 +12,7 @@ sudo apt build-dep deepin-menu
 
 
 
-## Final
+## FINAL
 
 ```bash
 sudo apt install lm-sensors
