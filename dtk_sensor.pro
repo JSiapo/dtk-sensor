@@ -11,3 +11,6 @@ SOURCES += \
         main.cpp
 
 RESOURCES +=         resources.qrc
+
+HEADERS += \
+    sensor.h
