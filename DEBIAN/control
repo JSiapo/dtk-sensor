@@ -1,0 +1,8 @@
+Package: dtk-sensor
+Version: 1.0
+Maintainer: deepinenespañol <deepinmirrorplus@gmail.com>
+Homepage: https://github.com/JSiapo/dtk-sensor
+Architecture: all
+Priority: optional
+Description: DTK-Sensor created by comunity https://deepinenespañol.org - Deepin Latin Code
+ DTK-Sensor is a dtk application that allows to visualize the temperature of the CPU

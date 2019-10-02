@@ -1,0 +1,11 @@
+[Desktop Entry]
+Categories=Qt;System;
+Comment=Graphical Interface for cpu sensor
+Exec=dtk-sensor
+GenericName=dtk-sensorv
+Icon=dtk-sensor
+Name=DTK Sensor
+Terminal=false
+Type=Application
+X-Deepin-Vendor=user-custom
+X-KDE-StartupNotify=true
