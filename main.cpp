@@ -11,11 +11,11 @@ int main(int argc, char *argv[])
     a.setAttribute(Qt::AA_UseHighDpiPixmaps);
 //    a.setTheme("light");
     a.setTheme("dark");
-    a.setOrganizationName("deepin");
+    a.setOrganizationName("deepinenespañol");
     a.setApplicationName("DTK-Sensor");
     a.setApplicationVersion("1.0");
-    a.setProductIcon(QIcon(":/images/logo.svg"));
-    a.setProductName("Dtk Application");
+    a.setProductIcon(QIcon(":/images/dtk-sensor.svg"));
+    a.setProductName("DTK-Sensor");
     a.setApplicationDescription("This is a dtk application to see CPU temperature.");
 
     DMainWindow w;
