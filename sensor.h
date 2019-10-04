@@ -1,5 +1,6 @@
 #ifndef SENSOR_H
 #define SENSOR_H
+
 //#include <QSensorPluginInterface>
 //class MyPluginClass : public QObject, public QSensorPluginInterface, public QSensorBackendFactory
 //{

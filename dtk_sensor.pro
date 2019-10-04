@@ -8,7 +8,8 @@ CONFIG += c++11 link_pkgconfig
 PKGCONFIG += dtkwidget
 
 SOURCES += \
-        main.cpp
+        main.cpp \
+    sensor.cpp
 
 RESOURCES +=         resources.qrc
 

@@ -20,9 +20,11 @@
 */
 
 #include <DApplication>
+#include <QApplication>
 #include <DMainWindow>
 #include <DWidgetUtil>
-#include <QString>
+#include <QApplication>
+#include <DAboutDialog>
 
 DWIDGET_USE_NAMESPACE
 
@@ -30,14 +32,18 @@ int main(int argc, char *argv[])
 {
     DApplication::loadDXcbPlugin();
     DApplication a(argc, argv);
+    DAboutDialog dialog;
     a.setAttribute(Qt::AA_UseHighDpiPixmaps);
 //    a.setTheme("light");
     a.setTheme("dark");
     a.setOrganizationName("Deepin en Español");
-    a.setApplicationName("DTK-Sensor");
+    a.setApplicationName("DTK Sensor");
     a.setApplicationVersion("1.0");
     a.setProductIcon(QIcon(":/images/dtk-sensor.svg"));
     a.setProductName("DTK-Sensor");
+    dialog.setWebsiteName("deepinenespañol.org");
+    dialog.setWebsiteLink("https://deepinenespañol.org");
+    a.setAboutDialog(&dialog);
 //Agrega la pagina a el "Acknowledgement"
     a.setApplicationAcknowledgementPage("https://deepinenespañol.org");
 //De este modo se podra traducir a otros idiomas
